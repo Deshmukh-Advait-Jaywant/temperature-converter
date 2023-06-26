@@ -1,0 +1,38 @@
+body{
+    padding: 50px 100px;
+    background-image: url('temperature.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    font-family: 'Segoe UI';
+}
+h1{
+    text-align: center;
+    color: rgb(199, 243, 132);
+}
+.input{
+    text-align: center;
+    border-radius: 10px;
+    background-color: #33e0ff;
+    padding: 50px;
+    border-top: 5px solid black;
+    box-shadow: 10px 16px #d5ee70;
+}
+.inner_div{
+    display: inline-block;
+    padding: 20px;
+}
+.temp:hover{
+    background-color: bisque;
+}
+.temp{
+    padding: 5px 10px;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.far{
+    font-size: 25px;
+    font-weight: bold;
+   color:rgb(238, 13, 69);
+}

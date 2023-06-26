@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="temperature.webp" type="image/x-icon">
+    <title>Temperature converter concept</title>
+    <link rel="stylesheet" href="about_style.css">
+</head>
+<body>
+    <h1>Temperature converter</h1>
+    <div class="input">
+        <div class="inner_div">
+                <label for="celsius" class="far" >celsius</label><br>
+                <input type="number" id="celsius" value="0" class="temp">
+        </div>
+        <div class="inner_div">
+            <label for="fahrenheit" class="far">fahrenheit</label>
+            <br>
+            <input type="number" id="fahrenheit" value="32" class="temp">
+        </div>
+    </div>
+</body>
+<script>
+	let celsius = document.getElementById('celsius');
+	let fahrenheit = document.getElementById('fahrenheit');
+	celsius.oninput = function () {
+		let f = (parseFloat(celsius.value) * 9) / 5 + 32;
+		fahrenheit.value = parseFloat(f.toFixed(2));
+	
+	}
+	fahrenheit.oninput = function () {
+		let c = ((parseFloat(
+			fahrenheit.value) - 32) * 5) / 9;
+		celsius.value = parseFloat(c.toFixed(2));
+	
+	}
+	
+
+</script>
+</html>
